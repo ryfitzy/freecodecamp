@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">MATH CATS Tutor Feedback</h1>
+    <p id="description">The purpose of this form is to allow students to give constructive feedback about our tutors, allowing us to better our program.</p>
+    <form id="survey-form">
+      <div id="student-info" class="student-info">
+        <label id="name-label" for="name">Student Name: <input id="name" name="name" type="text" placeholder="Name" required/></label>
+        <label id="email-label">TXST Email: <input id="email" type="email" placeholder="boko123@txstate.edu" required/></label>
+        <label id="number-label">Age (optional): <input id="number" type="number" placeholder="18" min="13" max="120"/></label>
+        <label id="grade"> Grade Level
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Freshman</option>
+            <option value="2">Sophomore</option>
+            <option value="3">Junior</option>
+            <option value="4">Senior</option>
+          </select>
+        </label>
+      </div>
+      <div id="subjects-tutored" class="subjects">
+        Subject you are here for (check all that apply):
+        <label>College Algebra:<input id="checking" name="check" type="checkbox" value="1"/></label>
+        <label>Pre-Cal/Calculus: <input id="checking" name="check" type="checkbox" value="2"/></label>
+        <label>Discrete Math: <input id="checking" name="check" type="checkbox" value="3"/></label>
+        <label>Other: <input id="checking" name="check" type="checkbox" value="4"/></label>
+      </div>
+      <div id="student-feedback" class="feedback">
+        Who was the person that tutored you?
+        <label id="tutor-name-label" for="name">Tutor Name: <input id="tutor-name" name="tutor-name" type="text" placeholder="Tutor Name" required/></label>
+
+        Were you satisfied of their performance?
+        <label>Yes <input id="r1" name="rad" value="1" type="radio" /></label>
+        <label>No <input id="r2" name="rad" value="2" type="radio" /></label>
+
+        Please explain why you were or were not satisified in their performance:
+        <label id="additional-comments"><textarea id="bio" name="bio" rows="3" cols="30" ></textarea>
+        </label>
+      </div>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>

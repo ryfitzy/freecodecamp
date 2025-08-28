@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+}
+
+label {
+  display: block;
+}
+
+.student-info, .subjects, .feedback {
+  padding: 20px;
+}
